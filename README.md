@@ -8,20 +8,13 @@
 
 
 ## Credits
-<details>
 
-<a href="https://t.me/MrTG_Coder">
-  <img src="https://img.shields.io/badge/ᴏᴡɴᴇʀ-blue?logo=telegram" width="80">
+[owner](https://t.me/MrTG_Coder)
 
+[masterolic](https://t.me/masterolic)
 
-<a href="https://t.me/masterolic">
-  <img src="https://img.shields.io/badge/ᴛʜᴀɴᴋs ᴛᴏ-blue?logo=telegram" width="80">
+[ᴜɴʀɪꜱᴇꜱ ʜᴀʀꜱʜᴀ 𝟸𝟺 🇮🇳 ᵀᴱᴸ](https://t.me/Sunrises_24)
 
-
-<a href="https://t.me/Sunrises_24">
-  <img src="https://img.shields.io/badge/ᴛʜᴀɴᴋs ᴛᴏ-blue?logo=telegram" width="80">
-
-</details>
 
 ## Language
 
