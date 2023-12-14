@@ -5,16 +5,6 @@
 <a href="https://t.me/mrtgcoderbot">
   <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
 
-
-<p align="center">
-    <img src="https://img.shields.io/github/contributors/MrTG-CodeBot/Obanai?style=for-the-badge&logo=appveyor" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/MrTG-CodeBot/Obanai?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/issues/MrTG-CodeBot/Obanai?style=for-the-badge&logo=appveyor" alt="Issues">
-    <img src="https://img.shields.io/github/forks/MrTG-CodeBot/Obanai?style=for-the-badge&logo=appveyor" alt="Forks">
-    <img src="https://img.shields.io/github/stars/MrTG-CodeBot/Obanai?style=for-the-badge&logo=appveyor" alt="Stars">
-</p>
-
-
 ## Credits
 <details>
 
