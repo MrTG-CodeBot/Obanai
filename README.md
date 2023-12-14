@@ -6,11 +6,11 @@
   <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
 
 <p align="center">
-    <img src="https://img.shields.io/github/contributors/master-code-r/coder?style=for-the-badge&logo=appveyor" alt="Contributors">
-    <img src="https://img.shields.io/github/repo-size/master-code-r/coder?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
-    <img src="https://img.shields.io/github/issues/master-code-r/coder?style=for-the-badge&logo=appveyor" alt="Issues">
-    <img src="https://img.shields.io/github/forks/master-code-r/coder?style=for-the-badge&logo=appveyor" alt="Forks">
-    <img src="https://img.shields.io/github/stars/master-code-r/coder?style=for-the-badge&logo=appveyor" alt="Stars">
+    <img src="https://img.shields.io/github/contributors/MrTG-CodeBot/obanai?style=for-the-badge&logo=appveyor" alt="Contributors">
+    <img src="https://img.shields.io/github/repo-size/MrTG-CodeBot/obanai?style=for-the-badge&logo=appveyor" alt="Repository Size"> <br>
+    <img src="https://img.shields.io/github/issues/MrTG-CodeBot/obanai?style=for-the-badge&logo=appveyor" alt="Issues">
+    <img src="https://img.shields.io/github/forks/MrTG-CodeBot/obanai?style=for-the-badge&logo=appveyor" alt="Forks">
+    <img src="https://img.shields.io/github/stars/MrTG-CodeBot/obanai?style=for-the-badge&logo=appveyor" alt="Stars">
 </p>
 
 ## Credits
