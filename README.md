@@ -69,8 +69,8 @@
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 * `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
-* `S_GROUP` : Add the link of your support group (add in this form eg:- "https://t.me/{ur_support_group_link}")
-* `S_CHANNEL` : Add the link of your support channel (add in this form eg:- "https://t.me/{ur_support_channel_link}")
+* `S_GROUP` : Add the link of your support group 
+* `S_CHANNEL` : Add the link of your support channel 
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
