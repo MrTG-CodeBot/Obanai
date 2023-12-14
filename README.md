@@ -69,17 +69,17 @@
 ## CMD
 
 ```
-* /start - to check i am in alive
-* /about - to get the bot details
-* /telegraph - reply to a media
-* /openai - your query
-* /song - to get the song from youtube
-* /ringtune - to get the ringtune
-* /sticker_id - to get the sticker id
-* /spotify - to get the details of song from spotify
-* /repo - to search repo from github
-* /broadcast - to broadcast a message to all bot users
-* /stats - to get the users of the bot
+/start - to check i am in alive
+/help - to get the help messages
+/telegraph - reply to a media
+/openai - your query
+/song - to get the song from youtube
+/ringtune - to get the ringtune
+/sticker_id - to get the sticker id
+/spotify - to get the details of song from spotify
+/repo - to search repo from github
+/broadcast - to broadcast a message to all bot users
+/stats - to get the users of the bot
 ```
 
 ## CMD USAGE
