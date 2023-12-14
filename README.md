@@ -5,13 +5,11 @@
 <a href="https://t.me/mrtgcoderbot">
   <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
 
-  [![Stars](https://img.shields.io/github/stars/Masterrockiei/Sakura?style=flat-square&color=yellow)](https://github.com/Masterrockiei/Sakura/stargazers)
-[![Forks](https://img.shields.io/github/forks/Masterrockiei/Sakura?style=flat-square&color=orange)](https://github.com/Masterrockiei/Sakura/fork)
-[![Size](https://img.shields.io/github/repo-size/Masterrockiei/Sakura?style=flat-square&color=green)](https://github.com/Masterrockiei/Sakura/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/Masterrockiei/Sakura)   
-[![Contributors](https://img.shields.io/github/contributors/Masterockiei/Sakura?style=flat-square&color=green)](https://github.com/Masterrockiei/Sakura/graphs/contributors)
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/Masterrockiei/Sakura/blob/main/LICENSE)
-[![Sparkline](https://stars.medv.io/Masterrockiei/Sakura.svg)](https://stars.medv.io/Masterrockiei/Sakura)
+  [![Stars](https://img.shields.io/github/stars/MrTG-CodeBot/Obanai?style=flat-square&color=yellow)](https://github.com/MrTG-CodeBot/Obanai/stargazers)
+[![Forks](https://img.shields.io/github/forks/MrTG-CodeBot/Obanai?style=flat-square&color=orange)](MrTG-CodeBot/Obanai/fork)
+[![Size](https://img.shields.io/github/repo-size/MrTG-CodeBot/Obanai?style=flat-square&color=green)](https://github.com/MrTG-CodeBot/Obanai/)   
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrTG-CodeBot/Obanai)   
+[![Contributors](https://img.shields.io/github/contributors/MrTG-CodeBot/Obanai?style=flat-square&color=green)](https://github.com/MrTG-CodeBot/Obanai/graphs/contributors)
 
 ## Credits
 <details>
