@@ -5,11 +5,11 @@
 <a href="https://t.me/mrtgcoderbot">
   <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
 
-  [![Stars](https://img.shields.io/github/stars/MrTG-CodeBot/Obanai?style=flat-square&color=yellow)](https://github.com/MrTG-CodeBot/Obanai/stargazers)
-[![Forks](https://img.shields.io/github/forks/MrTG-CodeBot/Obanai?style=flat-square&color=orange)](MrTG-CodeBot/Obanai/fork)
-[![Size](https://img.shields.io/github/repo-size/MrTG-CodeBot/Obanai?style=flat-square&color=green)](https://github.com/MrTG-CodeBot/Obanai/)   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrTG-CodeBot/Obanai)   
-[![Contributors](https://img.shields.io/github/contributors/MrTG-CodeBot/Obanai?style=flat-square&color=green)](https://github.com/MrTG-CodeBot/Obanai/graphs/contributors)
+  [![Stars](https://img.shields.io/github/stars/MrTG-CodeBot/Obanai?style=flat-square&color=yellow)]
+[![Forks](https://img.shields.io/github/forks/MrTG-CodeBot/Obanai?style=flat-square&color=orange)]
+[![Size](https://img.shields.io/github/repo-size/MrTG-CodeBot/Obanai?style=flat-square&color=green)
+[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)]
+[![Contributors](https://img.shields.io/github/contributors/MrTG-CodeBot/Obanai?style=flat-square&color=green)]
 
 ## Credits
 <details>
