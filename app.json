@@ -1,0 +1,19 @@
+{
+    "name": "CODER-BOT",
+    "description": "The Telegram Bot",
+    "keywords": ["Telegram", "bot", "coder"],
+    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your bot token.",
+            "required": true
+        },
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "required": true
+        }
+    }
