@@ -1,6 +1,5 @@
 <p align="center">
-  <img src="https://telegra.ph/file/746ebbcfbf928ab8e6490.jpg" alt="SD BOTS">
-</p>
+   <img src="https://telegra.ph/file/43e9e3a2e604ea243d3f7.jpg" alt="SD BOTS">
 
 <a href="https://t.me/mrtgcoderbot">
   <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
