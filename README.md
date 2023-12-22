@@ -23,6 +23,7 @@
 ## Acknowledgements
 
  - [BASE_REPO](https://github.com/Devil-Botz/Elsa)
+ - [INSTAGRAM CODE](https://github.com/Masterolic/Insta-Downloader)
 
 ᴡᴇ ᴡɪʟʟ ᴛʀʏ ᴛᴏ ᴀᴅᴅ ᴅᴏɴᴡʟᴏᴀᴅ ғʀᴏᴍ sᴏɴɢ ғʀᴏᴍ sᴘᴏᴛɪғʏ.
 
