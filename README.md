@@ -60,8 +60,9 @@
 * `S_CHANNEL` : Add the link of your support channel 
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this 
+* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
+* `DUMP_GROUP` : A channel to forward the instagram reels, stories, and post from the requests
 * `OPENAI_API_KEY` : Get the value from [OPENAI](https://platform.openai.com/api-keys)
 * `SPOTIFY_CLIENT_ID` : Get the value from [spotify developer](https://developer.spotify.com/)
 * `SPOTIFY_CLIENT_SECRET` : Get the value from [spotify developer](https://developer.spotify.com/)
@@ -98,7 +99,7 @@
 
 ## Telegram Bot - Music Downloader and More!
 
-Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, generating telegraph, getting sticker id, chat gpt function and even searching for repositories on GitHub.
+Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function and even searching for repositories on GitHub.
 
 
 ## How to Use
