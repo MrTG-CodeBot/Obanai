@@ -21,7 +21,7 @@ PORT = os.environ.get("PORT", "8080")
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-
+DUMP_GROUP = int(os.environ.get("DUMP_GROUP", ""))
 
 # important information for your bot
 S_GROUP = environ.get('S_GROUP', "")
