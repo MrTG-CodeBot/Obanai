@@ -16,7 +16,6 @@ async def repo(client, message):
                         f"**✨ sᴛᴀʀs:** <code>{repo['stargazers_count']}</code>\n" \
                         f"**📡 ғᴏʀᴋs:** <code>{repo['forks_count']}</code>"
 
-                # Await the coroutine here
                 await message.reply_text(reply)
             else:
                 await message.reply_text("ɴᴏ ʀᴇsᴜʟᴛ ғᴏᴜɴᴅ.")
