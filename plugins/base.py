@@ -260,6 +260,14 @@ async def list_chats(bot, message):
             outfile.write(out)
         await message.reply_document('chats.txt', caption="List Of Chats")
 
+@Client.on_message(filters.regex(r"#repo"))
+async def get_repo(client, message):
+    buttons = [[
+        InlineKeyboardButton('ʀᴇᴘᴏ', url="https://github.com/MrTG-CodeBot/Obanai")
+        ]]
+    reply_markup=InlineKeyboardMarkup(buttons)
+    await message.reply_text(text=script.GET_REPO_TXT.format(message.from_user.mention), reply_markup=reply_markup)
+
 @Client.on_message(filters.command('stats'))
 async def get_stats(bot, message):
     rju = await message.reply('Fetching stats..')
