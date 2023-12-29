@@ -9,7 +9,7 @@ async def repo(client, message):
         if response.status_code == 200:
             data = response.json()
             if data['total_count'] > 0:
-                repo = data['items'][0]  # Get the first result
+                repo = data['items'][0] 
                 reply = f"**{repo['name']}**\n\n" \
                         f"**🔖 ᴅᴇsᴄʀɪᴘᴛɪᴏɴ:** <code>{repo['description']}</code>\n" \
                         f"**🔗 ᴜʀʟ:** {repo['html_url']}\n" \
