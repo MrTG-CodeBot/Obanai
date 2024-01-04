@@ -45,7 +45,7 @@
 - [x] sᴘᴏᴛɪғʏ (ɴᴏᴡ ᴏɴʟʏ ғɪɴᴅ ᴛʜᴇ ᴅᴇᴛᴀɪʟs ᴏғ sᴏɴɢ)
 - [x] ʀᴇᴘᴏ sᴇᴀʀᴄʜ
 - [x] ᴘɪɴɢ(ᴀᴅᴍɪɴs) ᴄᴏᴍᴍᴀɴᴅ ʜᴀɴᴅʟᴇʀ "."
-- [x] ʙƦᴏᴀᴅᴄᴀsᴛ (ᴀᴅᴍɪɴs)
+- [x] ʙƦᴏᴀᴅᴄᴀsᴛ, ɢƦᴏᴜᴘ ʙƦᴏᴀᴅᴄᴀsᴛ (ᴀᴅᴍɪɴs)
 - [x] sᴛᴀᴛs
 - [x] ɪᴅ ᴀɴᴅ ᴜsᴇʀ ɪɴғᴏ
 - [x] ᴏᴛʜᴇʀ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs
@@ -62,7 +62,7 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* `DUMP_GROUP` : A channel to forward the instagram reels, stories, and post from the requests
+* `REQUESTED_CHANNEL` : A channel to forward the instagram reels, stories, and post from the requests
 * `OPENAI_API_KEY` : Get the value from [OPENAI](https://platform.openai.com/api-keys)
 * `SPOTIFY_CLIENT_ID` : Get the value from [spotify developer](https://developer.spotify.com/)
 * `SPOTIFY_CLIENT_SECRET` : Get the value from [spotify developer](https://developer.spotify.com/)
