@@ -81,6 +81,10 @@
 /repo - to search repo from github
 /broadcast - to broadcast a message to all bot users
 /stats - to get the users of the bot
+/report - to reply the message in the group for report to admins
+/fp - to send your feedback by publically 
+/fa - to send yiur feedback by anonymously 
+/font - to change the normal to sd fonts
 ```
 
 ## CMD USAGE
@@ -93,13 +97,19 @@
 * /sticker_id reply to a sticker
 * /spotify {song_name}
 * /repo {repo_name}
-* /broadcast - reply to your message
-* /stats - to get the stats of the bot 
+* /broadcast - reply to your message(admin)
+* /stats - to get the stats of the bot
+* /group_broadcast - reply to your message(admin)
+* /report or @admins or @admin - reply to your message
+* /fp {your message}
+* /fa - {your message}
+* /font {texr}
+* 
 ```
 
 ## Telegram Bot - Music Downloader and More!
 
-Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function and even searching for repositories on GitHub.
+Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback .
 
 
 ## How to Use
