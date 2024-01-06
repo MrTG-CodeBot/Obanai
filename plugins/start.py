@@ -72,10 +72,15 @@ async def help_command(client, message):
          InlineKeyboardButton('ɪɴsᴛᴀ', callback_data='insta'),
          InlineKeyboardButton('stats', callback_data='stats')
          ],[
-         InlineKeyboardButton('ʀᴇᴘoʀᴛ', callback_data='rport')
+         InlineKeyboardButton('ʀᴇᴘoʀᴛ', callback_data='rport'),
+         InlineKeyboardButton('ғᴇᴇᴅʙᴀᴄᴋ', callback_data='feedback'),
+         InlineKeyboardButton('ғᴏɴᴛ', callback_data='font')
          ],[
-         InlineKeyboardButton('Home', callback_data='start'),
-         InlineKeyboardButton('close', callback_data='close')
+         InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ', callback_data='donate'),
+         InlineKeyboardButton('ᴀᴜᴛᴏ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛ', callback_data='auto_accept')
+         ],[
+         InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(text=script.HELP_TXT, reply_markup=reply_markup)
@@ -108,24 +113,25 @@ async def callback_handle(client, query):
          InlineKeyboardButton('ɪɴsᴛᴀ', callback_data='insta'),
          InlineKeyboardButton('stats', callback_data='stats')
          ],[
-         InlineKeyboardButton('ʀᴇᴘoʀᴛ', callback_data='rport')
+         InlineKeyboardButton('ʀᴇᴘoʀᴛ', callback_data='rport'),
+         InlineKeyboardButton('ғᴇᴇᴅʙᴀᴄᴋ', callback_data='feedback'),
+         InlineKeyboardButton('ғᴏɴᴛ', callback_data='font')
          ],[
-         InlineKeyboardButton('Home', callback_data='start'),
-         InlineKeyboardButton('close', callback_data='close')
+         InlineKeyboardButton('ᴅᴏɴᴀᴛᴇ', callback_data='donate'),
+         InlineKeyboardButton('ᴀᴜᴛᴏ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛ', callback_data='auto_accept')
+         ],[
+         InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
+         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.HELP_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
 
     elif query.data == 'admin':
-        user_id = query.from_user.id
-        if user_id not in ADMINS: 
-            return await query.answer("You are not authorized to access this feature.", show_alert=True)
         buttons = [[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(text=script.ADMIN_CMD_TXT, reply_markup=reply_markup, parse_mode="HTML")
-        
+        await query.message.edit_text(text=script.ADMIN_CMD_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
 
     elif query.data == 'telegraph':
         buttons = buttons = [[
@@ -198,6 +204,34 @@ async def callback_handle(client, query):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.REPORT_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'feedback':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.FEEDBACK_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'font':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.FONT_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'donate':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.DONATE_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'auto_accept':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.REQUEST_ACCEPT_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
     
     elif query.data == 'about':
         buttons = buttons = [[
