@@ -6,6 +6,7 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQ
 from pyrogram import enums, filters, Client
 from info import API_ID, API_HASH, BOT_TOKEN, PORT, ADMINS, LOG_CHANNEL, DATABASE_NAME, DATABASE_URI, S_GROUP, S_CHANNEL
 from Script import script
+import time
 from utils import temp
 from pyrogram.errors import FloodWait
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -80,7 +81,8 @@ async def help_command(client, message):
          InlineKeyboardButton('ᴀᴜᴛᴏ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛ', callback_data='auto_accept')
          ],[
          InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close'),
+         InlineKeyboardButton('ɴᴇxᴛ', callback_data='next')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(text=script.HELP_TXT, reply_markup=reply_markup)
@@ -121,7 +123,8 @@ async def callback_handle(client, query):
          InlineKeyboardButton('ᴀᴜᴛᴏ ʀᴇǫᴜᴇsᴛ ᴀᴄᴄᴇᴘᴛ', callback_data='auto_accept')
          ],[
          InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
-         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close')
+         InlineKeyboardButton('ᴄʟᴏsᴇ', callback_data='close'),
+         InlineKeyboardButton('ɴᴇxᴛ', callback_data='next')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.HELP_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
@@ -132,7 +135,7 @@ async def callback_handle(client, query):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.ADMIN_CMD_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
-
+    
     elif query.data == 'telegraph':
         buttons = buttons = [[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
@@ -232,6 +235,23 @@ async def callback_handle(client, query):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.REQUEST_ACCEPT_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'next':
+        buttons = buttons = [[
+            InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ғɪʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ', callback_data='text_file')
+            ],[
+            InlineKeyboardButton('Back', callback_data='help'),
+            InlineKeyboardButton('Home', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.NEXT_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML) 
+
+    elif query.data == 'text_file':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.TEXT_TO_FILE_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
     
     elif query.data == 'about':
         buttons = buttons = [[
