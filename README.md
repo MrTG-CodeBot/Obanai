@@ -85,6 +85,7 @@
 /fp - to send your feedback by publically 
 /fa - to send yiur feedback by anonymously 
 /font - to change the normal to sd fonts
+/t2f - to convert the text to file with any text file formats
 ```
 
 ## CMD USAGE
@@ -104,7 +105,8 @@
 * /fp {your message}
 * /fa - {your message}
 * /font {texr}
-* 
+* /donate
+* /t2f {first reply to a text and /t2f file_name.fileforamat(eg:- reply a text and send /t2f txt_to_file.py)}
 ```
 
 ## Telegram Bot - Music Downloader and More!
