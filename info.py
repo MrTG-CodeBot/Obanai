@@ -34,7 +34,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
 # for google ai 
-# how to get the api key == https://t.me/sd_bots/242 (copy this link and search on telegram)
+# how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
 API_KEY = os.environ.get('API_KEY', '')
 
 #for spotify 
