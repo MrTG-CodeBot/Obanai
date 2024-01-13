@@ -30,7 +30,7 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>. ɪ ᴀᴍ ᴀ sᴘᴇᴄɪᴀ�
 ✯ Lᴀɴɢᴜᴀɢᴇ: <a href='https://www.python.org/download/releases/3.0/'>Pʏᴛʜᴏɴ 3</a>
 ✯ Mʏ Sᴇʀᴠᴇʀ: <a href='https://www.render.com'>ʀᴇɴᴅᴇʀ </a>
 ✯ Pʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: ᴠ2.0.30
-✯ Mʏ ᴠᴇʀsɪᴏɴ: ᴠ1.8"""
+✯ Mʏ ᴠᴇʀsɪᴏɴ: ᴠ2.8"""
 
     WELCME_TXT ="""ʜᴇʏ {} ✨,\n🗓️ᴊᴏɪɴ ᴅᴀᴛᴇ :- {}\n🕛ᴊᴏɪɴ ᴛɪᴍᴇ :- {}\n\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {}🍃\n"""
 
@@ -47,7 +47,8 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>. ɪ ᴀᴍ ᴀ sᴘᴇᴄɪᴀ�
 
     TELEGRAGH_TXT = """/telegraph Rᴇᴘʟʏ Tᴏ A Pʜᴏᴛᴏ Oʀ Vɪᴅᴇᴏ"""
 
-    OPENAI_TXT = """/openai {ᴜʀ ǫᴜᴇsᴛɪᴏɴ}\n sᴏᴍᴇᴛɪᴍᴇs ɪᴛ ᴡɪʟʟ ɴᴏᴛ ᴡᴏʀᴋ ᴘʀᴏᴘᴇʀʟʏ"""
+    GOOGLE_TXT = """/ask {ᴜʀ ǫᴜᴇsᴛɪᴏɴ}\n
+ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
     SONG_TXT = """/song {song_name} .ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ
 ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
@@ -69,7 +70,8 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>. ɪ ᴀᴍ ᴀ sᴘᴇᴄɪᴀ�
 
     REPORT_TXT = """@admins, @admins, /report. ғᴏʀ ʀᴇᴘᴏʀᴛ ᴛᴏ ᴀᴅᴍɪɴs(ᴡᴏʀᴋ ᴏɴʟʏ ɪɴ  ɢʀᴏᴜᴘ)"""
 
-    GET_REPO_TXT = """ʜᴇʏ {}, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍʏ ʀᴇᴘᴏ ᴀɴᴅ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʀᴇᴘᴏ"""
+    GET_REPO_TXT = """ʜᴇʏ {}, ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛᴏ ɢᴇᴛ ᴍʏ ʀᴇᴘᴏ ᴀɴᴅ ᴍᴀᴋᴇ ʏᴏᴜʀ ᴏᴡɴ ʀᴇᴘᴏ
+ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
     FEEDBACK_TXT = """/fp - ᴛᴏ sᴇɴᴅ ʏᴏᴜʀ ғᴇᴇᴅʙᴀᴄᴋ ʙʏ ᴘᴜʙʟɪᴠᴀʟʟʏ
 /fa - ᴛᴏ sᴇɴᴅ ʏᴏᴜʀ ғᴇᴇᴅʙᴀᴄᴋ ʙʏ ᴀɴᴏɴʏᴍᴏᴜsʟʏ
@@ -82,15 +84,18 @@ Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>. ɪ ᴀᴍ ᴀ sᴘᴇᴄɪᴀ�
 ᴇɢ:- <code>/font sd bots </code>
 ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
-    DONATE_TXT = """ʜᴇʏ {}\nᴅᴏɴᴀᴛᴇ ɪғ ʏᴏᴜ ᴄᴀɴ, ᴜᴘɪ ɪᴅ:- <code>zenistu@ibl</code>"""
+    DONATE_TXT = """ʜᴇʏ {}\nᴅᴏɴᴀᴛᴇ ɪғ ʏᴏᴜ ᴄᴀɴ, ᴜᴘɪ ɪᴅ:- <code>zenistu@ibl</code>
+ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
-    REQUEST_ACCEPT_TXT = """ʜᴇʏ {}\n ᴀᴅᴅ ᴛʜɪs ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴘᴛ ᴛᴏ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴛʜɪs ᴠɪᴅᴇᴏ ʜᴏᴡ ᴛᴏ sᴇᴛ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ʟɪᴋᴇ ʀᴇǫᴜᴇsᴛ ᴍᴇᴛʜᴏᴅ  https://t.me/TelegramTips/304"""
+    REQUEST_ACCEPT_TXT = """ʜᴇʏ {}\n ᴀᴅᴅ ᴛʜɪs ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴘᴛ ᴛᴏ ᴀᴅᴍɪɴ ᴀɴᴅ sᴇᴇ ᴛʜɪs ᴠɪᴅᴇᴏ ʜᴏᴡ ᴛᴏ sᴇᴛ ɢʀᴏᴜᴘ/ᴄʜᴀɴɴᴇʟ ʟɪᴋᴇ ʀᴇǫᴜᴇsᴛ ᴍᴇᴛʜᴏᴅ  https://t.me/TelegramTips/304
+ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
     TEXT_TO_FILE_TXT = """ʜᴇʏ {}\n,ᴛᴇxᴛ ᴄᴏɴᴠᴇʀᴛ ɪɴᴛᴏ ғɪʟᴇ (ᴀɴʏ ғᴏʀᴍᴀᴛ ᴏғ ᴛᴇxᴛ)
 
 ᴜsᴀɢᴇ:- ғɪʀsᴛ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ, ᴛʜᴇɴ /t2f (ғɪʟᴇɴᴀᴍᴇ+ᴇxᴛᴇɴsɪᴏɴ)
 
-ᴇɢ:- ғɪʀsᴛ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ /t2f bot.py"""
+ᴇɢ:- ғɪʀsᴛ ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍᴇssᴀɢᴇ /t2f bot.py
+ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
 
     NEXT_TXT = """Hᴇʀᴇ ɪs Mʏ Hᴇʟᴩ.
 ᴄʟɪᴄᴋ ᴛʜɪs /support"""
