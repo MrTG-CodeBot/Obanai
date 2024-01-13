@@ -33,8 +33,6 @@ DATABASE_URI  = os.environ.get("DB_URL", "")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 MONGO_URL = os.environ.get('MONGO_URL', "")
 
-# for openai
-OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY', '')
 # for google ai 
 # how to get the api key == https://t.me/sd_bots/242 (copy this link and search on telegram)
 API_KEY = os.environ.get('API_KEY', '')
