@@ -2,11 +2,11 @@
 
 from pyrogram import Client, filters
 import requests
-from info import REQUESTED_CHANNEL, API_KEY
+from info import REQUESTED_CHANNEL, GOOGLE_API_KEY
 import google.generativeai as genai
 # how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
 
-genai.configure(api_key=API_KEY)
+genai.configure(api_key=GOOGLE_API_KEY)
 
 @Client.on_message(filters.command("ask"))
 async def ai_generate(client, message):
