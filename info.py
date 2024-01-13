@@ -35,7 +35,7 @@ MONGO_URL = os.environ.get('MONGO_URL', "")
 
 # for google ai 
 # how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
-API_KEY = os.environ.get('API_KEY', '')
+GOOGLE_API_KEY = os.environ.get('API_KEY', '')
 
 #for spotify 
 SPOTIFY_CLIENT_ID = os.environ.get('SPOTIFY_CLIENT_ID', '')
