@@ -38,7 +38,7 @@
 ## Features
 
 - [x] ᴛᴇʟᴇɢʀᴀᴘʜ
-- [x] ᴏᴘᴇɴᴀɪ
+- [x] ɢᴏᴏɢʟᴇ ᴀɪ
 - [x] sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ (ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ)
 - [x] ʀɪɴɢᴛᴜɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ
 - [x] sᴛɪᴄᴋᴇʀ ɪᴅ
@@ -63,7 +63,7 @@
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * `REQUESTED_CHANNEL` : A channel to forward the instagram reels, stories, and post from the requests
-* `OPENAI_API_KEY` : Get the value from [OPENAI](https://platform.openai.com/api-keys)
+* `GOOGLE_API_KEY` : Get the value from [ɢᴏᴏɢʟᴇ ᴀɪ](https://t.me/sd_bots/256)
 * `SPOTIFY_CLIENT_ID` : Get the value from [spotify developer](https://developer.spotify.com/)
 * `SPOTIFY_CLIENT_SECRET` : Get the value from [spotify developer](https://developer.spotify.com/)
 
@@ -73,7 +73,7 @@
 /start - to check i am in alive
 /help - to get the help messages
 /telegraph - reply to a media
-/openai - your query
+/ask - your query
 /song - to get the song from youtube
 /ringtune - to get the ringtune
 /sticker_id - to get the sticker id
@@ -92,7 +92,7 @@
 
 ```
 * /telegraph  reply to a supported media media
-* /openai {your query}
+* /ask {your query}
 * /song {song_name}
 * /ringtune {song_name} or {song_name + artist_name}
 * /sticker_id reply to a sticker
