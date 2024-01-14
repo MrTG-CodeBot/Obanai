@@ -9,6 +9,7 @@ RUN pip install spotipy
 RUN pip install yt_dlp
 RUN pip install spotdl
 RUN pip instalL pafy
+RUN pip install google-generativeai
 RUN pip install pytube 
 RUN pip install youtube-search
 
