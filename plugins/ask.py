@@ -18,7 +18,7 @@ async def ai_generate(client, message):
 
     user_input = " ".join(user_input)
 
-    if user_input.lower() in ["who is your owner", "what is your owner name"]:  # Fixed indentation here
+    if user_input.lower() in ["who is your owner", "what is your owner name"]: 
         buttons = [[
             InlineKeyboardButton("developer", url="https://t.me/sd_bots")
         ]]
