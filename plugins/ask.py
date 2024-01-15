@@ -8,7 +8,7 @@ import google.generativeai as genai
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
-@Client.on_message(filters.command("ai"))
+@Client.on_message(filters.command("ask"))
 async def ai_generate(client, message):
     user_input = message.text.split()[1:]
 
