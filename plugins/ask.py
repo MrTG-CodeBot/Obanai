@@ -4,7 +4,7 @@ import requests
 from info import LOG_CHANNEL, GOOGLE_API_KEY
 import google.generativeai as genai
 
-genai.configure(api_key="GOOGLE_API_KEY")
+genai.configure(api_key=GOOGLE_API_KEY)
 # how to get the api key == https://t.me/sd_bots/256 (copy this link and search on telegram)
 
 @Client.on_message(filters.command("ai") & filters.group)
