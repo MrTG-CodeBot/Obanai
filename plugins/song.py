@@ -1,69 +1,71 @@
-import asyncio
 import os
-import re
-from pyrogram import Client, filters
-from pytube import YouTube
-from info import REQUESTED_CHANNEL
-from youtube_search import YoutubeSearch
+import random
+import shutil
+from pyrogram import Client, filters, enums
+from yt_dlp import YoutubeDL
 
-@Client.on_message(filters.command(["song"]))
-async def download_song(client, message):
+async def download_songs(query, download_directory="."):
+    query = f"{query} Lyrics".replace(":", "").replace("\"", "")
+    ydl_opts = {
+        "format": "bestaudio/best",
+        "default_search": "ytsearch",
+        "noplaylist": True,
+        "nocheckcertificate": True,
+        "outtmpl": f"{download_directory}/%(title)s.mp3",
+        "quiet": True,
+        "addmetadata": True,
+        "prefer_ffmpeg": True,
+        "geo_bypass": True,
+        "nocheckcertificate": True,
+    }
 
-  if len(message.text.split()) < 2:
-    await message.reply("ᴘʟᴇᴀsᴇ ᴘʀᴏᴠɪᴅᴇ ᴛʜᴇ sᴏɴɢ ʏᴏᴜ ᴡᴀɴᴛ ᴇɢ:- /song lover")
-    return
+    with YoutubeDL(ydl_opts) as ydl:
+        try:
+            video = ydl.extract_info(f"ytsearch:{query}", download=False)["entries"][0]["id"]
+            info = ydl.extract_info(video)
+            filename = ydl.prepare_filename(info)
+            if not filename:
+                print(f"Track Not Found⚠️")
+            else:
+                path_link = filename
+                return path_link, info 
+        except Exception as e:
+            raise Exception(f"Error downloading song: {e}")  
 
-  song_name = " ".join(message.text.split()[1:]) 
+@Client.on_message(filters.command("song"))
+async def song(_, message):
+    try:
+        await message.reply_chat_action(enums.ChatAction.TYPING)
+        k = await message.reply("⌛")
+        print("⌛")
+        try:
+            randomdir = f"/tmp/{str(random.randint(1, 100000000))}"
+            os.mkdir(randomdir)
+        except Exception as e:
+            await message.reply_text(f"Fᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ sᴏɴɢ ʀᴇᴛʀʏ ᴀғᴛᴇʀ sᴏᴍᴇᴛɪᴍᴇ ʀᴇᴀsᴏɴ: {e}")
+            return await k.delete()
+        query = message.text.split(None, 1)[1]
+        await message.reply_chat_action(enums.ChatAction.RECORD_AUDIO)
+        path, info = await download_songs(query, randomdir)
+        await message.reply_chat_action(enums.ChatAction.UPLOAD_AUDIO)
+        await k.edit("ᴜᴘʟᴏᴀᴅɪɴɢ")
+        song_title = info.get("title", "Unknown Title")   
+        song_caption = f"**🍃 {song_title}**\n" + \
+                       f"🍂 sᴜᴘᴘᴏʀᴛ: <a href='https://t.me/sd_bots'>sᴅ ʙᴏᴛs</a>" 
 
+        await message.reply_audio(
+            path,
+            caption=song_caption
+        )
 
-  await message.reply("⏳")
-
- 
-  search_results = YoutubeSearch(song_name, max_results=1).to_dict()
-  if not search_results:
-    await message.reply("ɴᴏ sᴏɴɢ ғᴏᴜɴᴅ ᴡɪᴛʜ ᴛʜᴀᴛ ɴᴀᴍᴇ ᴡɪᴛʜ ᴛʜᴀᴛ")
-
-  song_url = search_results[0]["url_suffix"]
-  song_title = search_results[0]["title"]
-  duration = search_results[0]["duration"]
-
- 
-  yt = YouTube(f"https://www.youtube.com{song_url}")
-  thumbnail_url = yt.thumbnail_url 
-
-  audio_streams = yt.streams.filter(only_audio=True)
-  if not audio_streams:
-    await message.reply("ɴᴏ ᴀᴜᴅɪᴏ sᴛᴇᴇᴀᴍ ғᴏᴜɴᴅ ғᴏʀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ᴠɪᴅᴇᴏs")
-    return
-
-  video = audio_streams.first()
-  audio_filename = f"{song_title}.mp3"
-
-  try:
-    video.download(filename=audio_filename)
-
-   
-    thumbnail_caption = f"**🍃 {song_title}**\n" + \
-              f"🕛 ᴅᴜʀᴛɪᴏɴ: {duration}\n" + \
-              f"🍂 ʏᴏᴜ ᴛᴜʙᴇ: <a href='https://www.youtube.com{song_url}'>ʏᴏᴜ ᴛᴜʙᴇ</a>"
-
-
-    await message.reply_photo(
-      thumbnail_url,
-      caption=thumbnail_caption
-    )
-
-    song_caption = f"**🎧 {song_title}**\n"
-
-   
-    await message.reply_audio(
-      audio_filename,
-      caption=song_caption
-    )
-    await client.send_message(REQUESTED_CHANNEL, text=f"#sᴏɴɢ\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\nʀᴇǫᴜᴇsᴛ ɪs {song_name}")
-
-
-    os.remove(audio_filename)
-
-  except Exception as e:
-    await message.reply(f"ᴇʀʀᴏʀ sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ: {e}")
+    except IndexError:
+        await message.reply("eg `/song lover`")
+        return await k.delete()
+    except Exception as e:
+        await message.reply_text(f"Fᴀɪʟᴇᴅ ᴛᴏ sᴇɴᴅ sᴏɴɢ ʀᴇᴀsᴏɴ: {e}")
+    finally:
+        try:
+            shutil.rmtree(randomdir)
+            return await k.delete()
+        except:
+            pass
