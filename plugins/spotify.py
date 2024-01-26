@@ -2,13 +2,13 @@ import re
 from pyrogram import Client, filters
 from pyrogram.types import *
 import os
-from info import REQUESTED_CHANNEL
+from info import REQUESTED_CHANNEL, SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET
 import requests
 import base64
 
 
-client_id = 'd3a0f15a75014999945b5628dca40d0a'
-client_secret = 'e39d1705e35c47e6a0baf50ff3bb587f'
+client_id = SPOTIFY_CLIENT_ID
+client_secret = SPOTIFY_CLIENT_SECRET
 
 
 credentials = base64.b64encode(f'{client_id}:{client_secret}'.encode('utf-8')).decode('utf-8')
