@@ -1,11 +1,12 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from pyrogram.errors.exceptions.bad_request_400 import MessageTooLong, PeerIdInvalid
-from info import ADMINS, LOG_CHANNEL, DATABASE_NAME, DATABASE_URI, S_GROUP, S_CHANNEL
+from info import ADMINS, LOG_CHANNEL, DATABASE_NAME, DATABASE_URI, S_GROUP, S_CHANNEL, MELCOW_NEW_USERS
 from database.users_db import db
 from datetime import date, datetime 
-from utils import get_size, temp, get_settings
+from utils import get_size, temp
 from Script import script
+import re
 from pyrogram.errors import ChatAdminRequired
 import asyncio
 import pytz
@@ -56,8 +57,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(text=script.WELCME_TXT.format(message.from_user.mention, today, time, message.chat.title))
-
+            temp.MELCOW['welcome'] = await message.reply(text=script.WELCME_TXT.format(message.from_user.mention, message.from_user.id,today, time, message.chat.title))
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
 async def leave_a_chat(bot, message):
@@ -243,6 +243,14 @@ async def list_users(bot, message):
             outfile.write(out)
         await message.reply_document('users.txt', caption="List Of Users")
 
+@Client.on_message(filters.regex(r"#repo"))
+async def get_repo(client, message):
+    buttons = [[
+        InlineKeyboardButton('ʀᴇᴘᴏ', url="https://github.com/MrTG-CodeBot/Obanai")
+        ]]
+    reply_markup=InlineKeyboardMarkup(buttons)
+    await message.reply_text(text=script.GET_REPO_TXT.format(message.from_user.mention), reply_markup=reply_markup)
+
 @Client.on_message(filters.command('chats') & filters.user(ADMINS))
 async def list_chats(bot, message):
     raju = await message.reply('Getting List Of chats')
@@ -260,28 +268,21 @@ async def list_chats(bot, message):
             outfile.write(out)
         await message.reply_document('chats.txt', caption="List Of Chats")
 
-@Client.on_message(filters.regex(r"#repo"))
-async def get_repo(client, message):
-    buttons = [[
-        InlineKeyboardButton('ʀᴇᴘᴏ', url="https://github.com/MrTG-CodeBot/Obanai")
-        ]]
-    reply_markup=InlineKeyboardMarkup(buttons)
-    await message.reply_text(text=script.GET_REPO_TXT.format(message.from_user.mention), reply_markup=reply_markup)
-
 @Client.on_message(filters.command('stats'))
 async def get_stats(bot, message):
     rju = await message.reply('Fetching stats..')
     total_users = await db.total_users_count()
+    total_chats = await db.total_chat_count()
     size = await db.get_db_size()
     free = 536870912 - size
     size = get_size(size)
     free = get_size(free)    
-    await rju.edit(script.STATUS_TXT.format(total_users))
+    await rju.edit(script.STATUS_TXT.format(total_users, total_chats))
 
 @Client.on_message(filters.command('logs') & filters.user(ADMINS))
 async def log_file(bot, message):
     """Send log file"""
     try:
-        await message.reply_document('TelegramBot.log')
+        await message.reply_document('TelegramBot.txt')
     except Exception as e:
         await message.reply(str(e))
