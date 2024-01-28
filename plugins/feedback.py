@@ -1,4 +1,5 @@
 from pyrogram import Client, filters
+from pyrogram.types import *
 from info import LOG_CHANNEL
 
 @Client.on_message(filters.command("feedback"))
