@@ -24,6 +24,9 @@ LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 REQUESTED_CHANNEL = int(os.environ.get("REQUESTED_CHANNEL", ""))
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 
+# for force subscribe[Your Force Sub Channel Username Without @ (eg:- sd_bots)]
+F_SUB = os.environ.get("FORCE_SUB", "") 
+
 # important information for your bot
 S_GROUP = environ.get('S_GROUP', "")
 S_CHANNEL = environ.get('S_CHANNEL', "")
