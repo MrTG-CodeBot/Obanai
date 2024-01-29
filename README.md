@@ -47,6 +47,7 @@
 - [x] ᴘɪɴɢ(ᴀᴅᴍɪɴs) ᴄᴏᴍᴍᴀɴᴅ ʜᴀɴᴅʟᴇʀ "."
 - [x] ʙƦᴏᴀᴅᴄᴀsᴛ, ɢƦᴏᴜᴘ ʙƦᴏᴀᴅᴄᴀsᴛ (ᴀᴅᴍɪɴs)
 - [x] sᴛᴀᴛs
+- [X] ғ_sᴜʙ
 - [x] ɪᴅ ᴀɴᴅ ᴜsᴇʀ ɪɴғᴏ
 - [x] ᴏᴛʜᴇʀ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs
 
@@ -56,6 +57,7 @@
 * `BOT_TOKEN`: Create a bot using [@BotFather](https://telegram.dog/BotFather), and get the Telegram API token.
 * `API_ID`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
+* `F_SUB `: Your Force Sub Channel Username Without @ (eg:- sd_bots)
 * `S_GROUP` : Add the link of your support group 
 * `S_CHANNEL` : Add the link of your support channel 
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
@@ -111,7 +113,7 @@
 
 ## Telegram Bot - Music Downloader and More!
 
-Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback .
+Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, f_sub,report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback .
 
 
 ## How to Use
