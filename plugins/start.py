@@ -129,11 +129,15 @@ async def callback_handle(client, query):
         await query.message.edit_text(text=script.HELP_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
 
     elif query.data == 'admin':
-        buttons = [[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
-        ]]
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(text=script.ADMIN_CMD_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+        user_id = query.from_user.id
+        if user_id in ADMINS:
+            buttons = [[
+                InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+            ]]
+            reply_markup = InlineKeyboardMarkup(buttons)
+            await query.message.edit_text(text=script.ADMIN_CMD_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+        else:
+            await query.answer("sᴏʀʀʏ ᴛʜɪs ʙᴜᴛᴛᴏɴ ɪs ᴏɴʟʏ ғᴏʀ ᴍʏ ᴀᴅᴍɪɴs", show_alert=True)
     
     elif query.data == 'telegraph':
         buttons = buttons = [[
