@@ -241,7 +241,8 @@ async def callback_handle(client, query):
 
     elif query.data == 'next':
         buttons = buttons = [[
-            InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ғɪʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ', callback_data='text_file')
+            InlineKeyboardButton('ᴛᴇxᴛ ᴛᴏ ғɪʟᴇ ᴄᴏɴᴠᴇʀᴛᴇʀ', callback_data='text_file'),
+            InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ',  callback_data='livegram')
             ],[
             InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Home', callback_data='start')
@@ -251,10 +252,17 @@ async def callback_handle(client, query):
 
     elif query.data == 'text_file':
         buttons = buttons = [[
-            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='help')
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='next')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.TEXT_TO_FILE_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'livegram':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='next')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.CONTACT_ADMIN_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
     
     elif query.data == 'about':
         buttons = buttons = [[
