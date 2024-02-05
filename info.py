@@ -27,6 +27,9 @@ MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 # for force subscribe[Your Force Sub Channel Username Without @ (eg:- sd_bots)]
 F_SUB = os.environ.get("FORCE_SUB", "") 
 
+# for eval function, work only in a specific group
+EVAL_ID = int(os.environ.get("EVAL_ID", "-1002002636126"))
+
 # for message forward from user
 ADMIN_GROUP_ID = int(environ.get('ADMIN_GROUP_ID', ''))
 
