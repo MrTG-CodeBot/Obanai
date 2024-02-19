@@ -42,7 +42,7 @@
 - [x] sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ (ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ)
 - [x] ʀɪɴɢᴛᴜɴᴇ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ
 - [x] sᴛɪᴄᴋᴇʀ ɪᴅ
-- [x] ᴅᴏᴡɴʟᴏᴀᴅ sᴏɴɢ ᴜsɪɴɢ sᴘᴏᴛɪғʏ ᴛʀᴀᴄᴋ ᴜʀʟ 
+- [x] sᴘᴏᴛɪғʏ (ɴᴏᴡ ᴏɴʟʏ ғɪɴᴅ ᴛʜᴇ ᴅᴇᴛᴀɪʟs ᴏғ sᴏɴɢ)
 - [x] ʀᴇᴘᴏ sᴇᴀʀᴄʜ
 - [x] ᴘɪɴɢ(ᴀᴅᴍɪɴs) ᴄᴏᴍᴍᴀɴᴅ ʜᴀɴᴅʟᴇʀ "."
 - [x] ʙƦᴏᴀᴅᴄᴀsᴛ, ɢƦᴏᴜᴘ ʙƦᴏᴀᴅᴄᴀsᴛ (ᴀᴅᴍɪɴs)
@@ -88,10 +88,6 @@
 /fa - to send yiur feedback by anonymously 
 /font - to change the normal to sd fonts
 /t2f - to convert the text to file with any text file formats
-/send - to send the message to the user
-/eval - ᴇxᴇᴄᴜᴛᴇ Pʏᴛʜᴏɴ ᴄᴏᴅᴇ
-/qr - to convert text or link to qr code
-ʏᴏᴜ ᴄᴀɴ sᴇɴᴅ ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏғ ɪᴍᴀɢᴇ/ᴠɪᴅᴇᴏ , ᴀɴᴅ ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ʟɪɴᴋ ᴛᴏ ᴠɪᴅᴇᴏ/ɪᴍᴀɢᴇ. 
 ```
 
 ## CMD USAGE
@@ -113,16 +109,11 @@
 * /font {texr}
 * /donate
 * /t2f {first reply to a text and /t2f file_name.fileforamat(eg:- reply a text and send /t2f txt_to_file.py)}
-* /send (ᴜʀ_ᴍᴇssᴀɢᴇ)
-* /eval (python_code)
-* /install (package_name for eval work only for admins)
-* /qr (text or link)
-* ʏᴏᴜ ᴄᴀɴ sᴇɴᴅ ᴛʜᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʟɪɴᴋ ᴏғ ɪᴍᴀɢᴇ/ᴠɪᴅᴇᴏ , ᴀɴᴅ ɪ ᴄᴀɴ ᴄᴏɴᴠᴇʀᴛ ʟɪɴᴋ ᴛᴏ ᴠɪᴅᴇᴏ/ɪᴍᴀɢᴇ.
 ```
 
 ## Telegram Bot - Music Downloader and More!
 
-Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, download song using Spotify track url, f_sub,report to admins, download instagram reels, stories and post, generating telegraph, getting sticker id, eval python code exc, searching for repositories on GitHub,font changer,send feedback .
+Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, f_sub,report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback .
 
 
 ## How to Use
