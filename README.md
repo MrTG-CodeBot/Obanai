@@ -59,7 +59,9 @@
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `F_SUB `: Your Force Sub Channel Username Without @ (eg:- sd_bots)
 * `S_GROUP` : Add the link of your support group 
-* `S_CHANNEL` : Add the link of your support channel 
+* `S_CHANNEL` : Add the link of your support channel
+* `EVAL_ID` : For eval function, work only in a specific group
+* `ADMIN_GROUP_ID` : For message forward from user
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com).
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com).
@@ -79,7 +81,7 @@
 /song - to get the song from youtube
 /ringtune - to get the ringtune
 /sticker_id - to get the sticker id
-/spotify - to get the details of song from spotify
+send the spotify track url for downloading the song
 /repo - to search repo from github
 /broadcast - to broadcast a message to all bot users
 /stats - to get the users of the bot
@@ -98,7 +100,7 @@
 * /song {song_name}
 * /ringtune {song_name} or {song_name + artist_name}
 * /sticker_id reply to a sticker
-* /spotify {song_name}
+* send the spotify track url for downloading the song
 * /repo {repo_name}
 * /broadcast - reply to your message(admin)
 * /stats - to get the stats of the bot
