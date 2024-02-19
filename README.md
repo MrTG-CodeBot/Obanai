@@ -4,7 +4,7 @@
    
 
 <a href="https://t.me/mrtgcoderbot">
-  <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="80">
+  <img src="https://img.shields.io/badge/ʙᴏᴛ-blue?logo=telegram" width="100">
 
 
 
