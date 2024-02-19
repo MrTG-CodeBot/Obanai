@@ -245,6 +245,9 @@ async def callback_handle(client, query):
             InlineKeyboardButton('ᴄᴏɴᴛᴀᴄᴛ ᴀᴅᴍɪɴ',  callback_data='livegram'),
             InlineKeyboardButton('ᴇᴠᴀʟ',  callback_data='eval')
             ],[
+            InlineKeyboardButton('ǫʀ ᴄᴏᴅᴇ',  callback_data='qr'),
+            InlineKeyboardButton('ᴛᴇʟᴇɢʀᴀᴘʜ ᴅᴇᴄᴏᴅᴇʀ',  callback_data='t_decoder')
+            ],[
             InlineKeyboardButton('Back', callback_data='help'),
             InlineKeyboardButton('Home', callback_data='start')
         ]]
@@ -271,6 +274,20 @@ async def callback_handle(client, query):
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(text=script.EVAL_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 'qr':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='next')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.QR_TEXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
+
+    elif query.data == 't_decoder':
+        buttons = buttons = [[
+            InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='next')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(text=script.T_DECODER_TXT.format(query.from_user.mention), reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
     
     elif query.data == 'about':
         buttons = buttons = [[
