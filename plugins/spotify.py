@@ -25,14 +25,14 @@ def get_access_token():
     response = requests.post(url, headers=headers, data=data)
     return response.json()['access_token']
 
-async def download_songs(name, download_directory="."):
-  query = f"{name} Lyrics".replace(":", "").replace("\"", "")
+async def download_songs(music, download_directory="."):
+  query = f"{music}".replace("+", "")
   ydl_opts = {
       "format": "bestaudio/best",
       "default_search": "ytsearch",
       "noplaylist": True,
       "nocheckcertificate": True,
-      "outtmpl": f"{name}.mp3",
+      "outtmpl": f"{music}.mp3",
       "quiet": True,
       "addmetadata": True,
       "prefer_ffmpeg": True,
@@ -42,7 +42,7 @@ async def download_songs(name, download_directory="."):
 
   with YoutubeDL(ydl_opts) as ydl:
       try:
-          video = ydl.extract_info(f"ytsearch:{name}", download=False)["entries"][0]["id"]
+          video = ydl.extract_info(f"ytsearch:{music}", download=False)["entries"][0]["id"]
           info = ydl.extract_info(video)
           filename = ydl.prepare_filename(info)
           if not filename:
@@ -86,11 +86,12 @@ async def spotify(client, message):
     album = data["album"]["name"]
     release_date = data["album"]["release_date"]
 
+    music = name + album
+    thumbnail = wget.download(thumbnail_url)
+
     randomdir = f"/tmp/{str(random.randint(1, 100000000))}"
     os.mkdir(randomdir)
-    path, info = await download_songs(name, randomdir)
-    thumbnail = wget.download(thumbnail_url)
- 
+    path, info = await download_songs(music, randomdir)
     await message.reply_photo(photo=thumbnail_url, caption=f"🎧 ᴛɪᴛʟᴇ: <code>{name}</code>\n🎼 ᴀʀᴛɪsᴛ: <code>{artist}</code>\n🎤 ᴀʟʙᴜᴍ: <code>{album}</code>\n🗓️ ʀᴇʟᴇᴀsᴇ ᴅᴀᴛᴇ: <code>{release_date}</code>\n")
     e=await client.send_message(REQUESTED_CHANNEL, text=f"#sᴘᴏᴛꞮҒʏ\nʀᴇǫᴜᴇsᴛᴇᴅ ғʀᴏᴍ {message.from_user.mention}\nʀᴇǫᴜᴇsᴛ ɪs <code>{song_name_or_url}</code>\nᴀᴜᴅɪᴏ: ❌")
     await message.reply_audio(
