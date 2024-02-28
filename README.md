@@ -52,6 +52,7 @@
 - [X] ғ_sᴜʙ
 - [x] ɪᴅ ᴀɴᴅ ᴜsᴇʀ ɪɴғᴏ
 - [x] ᴏᴛʜᴇʀ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs
+- [X] ᴏᴛʜᴇʀ ғᴇᴀᴛᴜʀᴇs 
 
 ## Variables
 
@@ -92,6 +93,15 @@ send the spotify track url for downloading the song
 /fa - to send yiur feedback by anonymously 
 /font - to change the normal to sd fonts
 /t2f - to convert the text to file with any text file formats
+/send - you can contact through this bot
+!ans - bot admins can send the reply through this bot  
+/eval - you can run your python program
+/qr - convert the text or link into qr code
+telegraph decoder on command needed send the telegraph link
+/cc - it will generate the cc 
+/image - you can search image and you can also downlaod it
+/tgsticker - you can search sticker for telegram
+/torrent - send the movie name with /torrent
 ```
 
 ## CMD USAGE
@@ -113,11 +123,20 @@ send the spotify track url for downloading the song
 * /font {texr}
 * /donate
 * /t2f {first reply to a text and /t2f file_name.fileforamat(eg:- reply a text and send /t2f txt_to_file.py)}
+* /send (ᴜʀ_ᴍᴇssᴀɢᴇ)
+* !ans {user_id} {ur_message} only for admins
+* /eval run your python program
+* /qr {ur_message or link}
+* send the telegraph link
+* /cc {enter the first four digit of bin}
+* /image {search image}
+* /tgsticker {sticker search}
+* /torrent {movie_name}
 ```
 
 ## Telegram Bot - Music Downloader and More!
 
-Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, f_sub,report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback .
+Welcome to our Telegram Bot for downloading songs from YouTube, download ringtune, searching for songs on Spotify, f_sub,report to admins, download instagram reels, stories and post,generating telegraph, getting sticker id, chat gpt function, searching for repositories on GitHub,font changer,send feedback and some other functions.
 
 
 ## How to Use
