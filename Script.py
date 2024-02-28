@@ -149,6 +149,7 @@ Yᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ QR ᴄᴏᴅᴇs ʙʏ sᴇɴᴅɪɴɢ ᴛ
 
     CC_GEN_TXT = """ʜᴇʏ {}
 ʏᴏᴜ ᴄᴀɴ ɢᴇɴᴇʀᴀᴛᴇ ᴄᴄ ᴡɪᴛʜɪɴ ᴛᴇʟᴇɢʀᴀᴍ.
-ᴜsᴀɢᴇ <code>/cc {Enter the first four digit of bin}</code>
+ᴜsᴀɢᴇ <code>/cc 1234 (Enter the first four digit of bin)</code>
+
 
 ᴄʀᴇᴅɪᴛs @MrTG_Coder"""
