@@ -27,8 +27,6 @@
  - [BASE_REPO](https://github.com/Devil-Botz/Elsa)
  - [INSTAGRAM CODE](https://github.com/Masterolic/Insta-Downloader)
 
-ᴡᴇ ᴡɪʟʟ ᴛʀʏ ᴛᴏ ᴀᴅᴅ ᴅᴏɴᴡʟᴏᴀᴅ ғʀᴏᴍ sᴏɴɢ ғʀᴏᴍ sᴘᴏᴛɪғʏ.
-
 ## License
 
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://github.com/master-code-r/coder/blob/main/LICENSE)
