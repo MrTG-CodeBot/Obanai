@@ -12,6 +12,8 @@
 
 [owner](https://t.me/MrTG_Coder)
 
+## Thanks to
+
 [masterolic](https://t.me/masterolic)
 
 [sᴜɴʀɪꜱᴇꜱ ʜᴀʀꜱʜᴀ 𝟸𝟺 🇮🇳 ᵀᴱᴸ](https://t.me/Sunrises_24)
